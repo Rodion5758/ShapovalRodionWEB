@@ -1,13 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Карта викладача</title>
+    <title>Форма заповення викладача</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"
 </head>
 
 <body>
-    <h1>Компактний варіант картки викладача</h1>
-    <>
+    <h1>Форма для <i>викладача</i></h1>
+    <br>
+    <form action="task2.html">
+        
+        <div>
+            <label for="name">Введіть ім'я:</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="sname">Введіть прізвище:</label>
+            <input type="text" id="sname" name="sname">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="bname">Введіть ім'я по батькові:</label>
+            <input type="text" id="bname" name="bname">
+        </div>
+
+        <br>
+        
+        <div>
+            <p>Виберіть стать:</p>
+            <input type="radio" id="male" name="sex" value="male">
+            <label for="male">Чоловік</label>
+        </div>
+
+        <div>
+            <input type="radio" id="female" name="sex" value="female">
+            <label for="female">Жінка</label>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="birthday">Введіть день народження:</label>
+            <input type ="date" id="birthday" name="birthday">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="mail">Введіть електронну пошту:</label>
+            <input type ="email" id="mail" name="mail" placeholder="">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="number">Введіть номер:</label>
+            <input type ="tel" id="number" name="number" pattern="+380[0-9]{9}" placeholder="+380681271514">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="color">Оберіть колір:</label>
+            <input type ="color" id="color" name="color">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="state">Оберіть країну:</label>
+            <input type ="search" id="state" name="state">
+        </div>
+
+        <br>
+
+        <div> </div>
+            <label for="city">Оберіть місто:</label>
+            <input type ="search" id="city" name="city">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="comment">Додайте якийсь коментар:</label> <br>
+            <textarea id="message" name="message"></textarea>
+        </div>
+
+        <br>
+
+        <input type="submit" value="Підтвердити">
+    </form>
 </body>
 </html>
