@@ -1,108 +1,108 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Форма заповення викладача</title>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <head>
+        <title>Форма заповення викладача</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 
-<body>
-    <h1>Форма для <i>викладача</i></h1>
-    <br>
-    <form action="task2.html">
-        
-        <div>
-            <label for="name">Введіть ім'я:</label>
-            <input type="text" id="name" name="name">
-        </div>
-
+    <body>
+        <h1>Форма для <i>викладача</i></h1>
         <br>
+        <form action="task2.html">
+            
+            <div>
+                <label for="name">Введіть ім'я:</label>
+                <input type="text" id="name" name="name">
+            </div>
 
-        <div>
-            <label for="sname">Введіть прізвище:</label>
-            <input type="text" id="sname" name="sname">
-        </div>
+            <br>
 
-        <br>
+            <div>
+                <label for="sname">Введіть прізвище:</label>
+                <input type="text" id="sname" name="sname">
+            </div>
 
-        <div>
-            <label for="bname">Введіть ім'я по батькові:</label>
-            <input type="text" id="bname" name="bname">
-        </div>
+            <br>
 
-        <br>
-        
-        <div>
-            <p>Виберіть стать:</p>
-            <input type="radio" id="male" name="sex" value="male">
-            <label for="male">Чоловік</label>
-        </div>
+            <div>
+                <label for="bname">Введіть ім'я по батькові:</label>
+                <input type="text" id="bname" name="bname">
+            </div>
 
-        <div>
-            <input type="radio" id="female" name="sex" value="female">
-            <label for="female">Жінка</label>
-        </div>
+            <br>
+            
+            <div>
+                <p>Виберіть стать:</p>
+                <input type="radio" id="male" name="sex" value="male">
+                <label for="male">Чоловік</label>
+            </div>
 
-        <br>
+            <div>
+                <input type="radio" id="female" name="sex" value="female">
+                <label for="female">Жінка</label>
+            </div>
 
-        <div>
-            <label for="birthday">Введіть день народження:</label>
-            <input type ="date" id="birthday" name="birthday">
-        </div>
+            <br>
 
-        <br>
+            <div>
+                <label for="birthday">Введіть день народження:</label>
+                <input type ="date" id="birthday" name="birthday">
+            </div>
 
-        <div>
-            <label for="mail">Введіть електронну пошту:</label>
-            <input type ="email" id="mail" name="mail" placeholder="poshta@gmail.com">
-        </div>
+            <br>
 
-        <br>
+            <div>
+                <label for="mail">Введіть електронну пошту:</label>
+                <input type ="email" id="mail" name="mail" placeholder="poshta@gmail.com">
+            </div>
 
-        <div>
-            <label for="number">Введіть номер:</label>
-            <input type ="tel" id="number" name="number" pattern="+380\d{9}" placeholder="+380681271514">
-        </div>
+            <br>
 
-        <br>
+            <div>
+                <label for="number">Введіть номер:</label>
+                <input type ="tel" id="number" name="number" pattern="+380\d{9}" placeholder="+380681271514">
+            </div>
 
-        <div>
-            <label for="color">Оберіть колір:</label>
-            <input type ="color" id="color" name="color">
-        </div>
+            <br>
 
-        <br>
+            <div>
+                <label for="color">Оберіть колір:</label>
+                <input type ="color" id="color" name="color">
+            </div>
 
-        <div>
-            <label for="state">Оберіть країну:</label>
-            <input type ="search" id="state" name="state" list="countries">
-            <datalist id="cities">
-                <option value="Україна">
-                <option value="Данія">
-            </datalist>
-        </div>
+            <br>
 
-        <br>
+            <div>
+                <label for="state">Оберіть країну:</label>
+                <input type ="search" id="state" name="state" list="countries">
+                <datalist id="countries">
+                    <option value="Україна">
+                    <option value="Данія">
+                </datalist>
+            </div>
 
-        <div> </div>
-            <label for="city">Оберіть місто:</label>
-            <input type ="search" id="city" name="city" list="cities">
-            <datalist id="cities">
-                <option value="Київ">
-                <option value="Львів">
-            </datalist>
-        </div>
+            <br>
 
-        <br>
+            <div> </div>
+                <label for="city">Оберіть місто:</label>
+                <input type ="search" id="city" name="city" list="cities">
+                <datalist id="cities">
+                    <option value="Київ">
+                    <option value="Львів">
+                </datalist>
+            </div>
 
-        <div>
-            <label for="comment">Додайте якийсь коментар:</label> <br>
-            <textarea id="message" name="message"></textarea>
-        </div>
+            <br>
 
-        <br>
+            <div>
+                <label for="comment">Додайте якийсь коментар:</label> <br>
+                <textarea id="message" name="message"></textarea>
+            </div>
 
-        <input type="submit" value="Підтвердити">
-    </form>
-</body>
+            <br>
+
+            <input type="submit" value="Підтвердити">
+        </form>
+    </body>
 </html>
