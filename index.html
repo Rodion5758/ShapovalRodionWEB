@@ -1,16 +1,75 @@
 <!DOCTYPE html>
-<html>
-<head lang="uk">
+<html lang="uk">
+<head>
     <meta charset="UTF-8">
-    <title>My Page</title>
-
-
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy List</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-	<span class="product-item">
-		Apple
-		<span class="amount">4</span>
-	</span>
+    <section>
+        <div id="first" class="frames">
+            <div class="search-item">
+                <input type="text" id="search-input" placeholder="Назва товару">
+                <button id="search-add" data-tooltip="Додати знайдений товар">Додати</button>
+            </div>
+
+            <div class="products">
+
+                <div class="item">
+                    <span class="item-name"><del>Помідори</del></span>
+                    <div class="quantity-controls">
+                        <span class="item-quantity">2</span>
+                    </div>
+                    <span class="label not-bought">Не куплено</span>
+                </div>
+
+                <div class="item">
+                    <span class="item-name">Печиво</span>
+                    <div class="quantity-controls">
+                        <button class="remove-item-button active" data-tooltip="Зменшити кількість">-</button>
+                        <span class="item-quantity">2</span>
+                        <button class="add-item-button" data-tooltip="Збільшити кількість">+</button>
+                    </div>
+                    <span class="label bought">Куплено</span>
+                    <button class="delete-button" data-tooltip="Видалити товар">x</button>
+                </div>
+
+                <div class="item">
+                    <input type="text" class="new-item-input" value="Сир">
+                    <div class="quantity-controls">
+                        <button class="remove-item-button unactive" data-tooltip="Мінімальна кількість">-</button>
+                        <span class="item-quantity">1</span>
+                        <button class="add-item-button" data-tooltip="Збільшити кількість">+</button>
+                    </div>
+                    <span class="label bought">Куплено</span>
+                    <button class="delete-button" data-tooltip="Видалити товар">x</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="second" class ="frames">
+            <h2>Залишилось</h2>
+            <div class="summary-tags remaining-items">
+                <span class="tag">Печиво <span class="count">2</span></span>
+                <span class="tag">Сир <span class="count">1</span></span>
+            </div>
+
+            <h2>Куплено</h2>
+            <div class="summary-tags bought-items">
+                <span class="tag"><del>Помідори</del><span class="count"><del>2</del></span></span>
+            </div>
+        </div>
+    </section>
+
+    <div class="badge-container">
+        <div class="badge">
+            <div class="badge-text">Buy List</div>
+            <div class="author-text">Created by:<br><b>Shapoval Rodion</b></div>
+        </div>
+    </div>
 </body>
 </html>
